@@ -12,11 +12,11 @@ Title: 'How to Be a Serial Killer'</br>
 Plot: 'A serial killer decides to teach the secrets of his satisfying career to a video store clerk.'</br>
 Genres: 'Comedy', 'Crime', 'Horror'
 
-![image info](https://raw.githubusercontent.com/albahnsen/MIAD_ML_and_NLP/main/images/moviegenre.png)
+![image info](https://eduardotoledozero.github.io/assets/img/competitions/moviegenre.png)
 
 The idea is to use this data in order to predict the likely of a movie belongs to a genre given its plot.
 
-Thank to Professor Fabio González, Ph.D. y his student John Arevalo by providing  this dataser. See <https://arxiv.org/abs/1702.01992>
+Thank to Professor Fabio González, Ph.D. and his student John Arevalo by providing  this dataset.(UniAndes) See <https://arxiv.org/abs/1702.01992>
 
 In this project, the full Machine Learning pipeline can be seen in each part of this work:
 
@@ -29,6 +29,11 @@ In this project, the full Machine Learning pipeline can be seen in each part of 
 - Prediction
 - Model Deployment to production  
 
-## Exploratory  Data Analysis
+### Exploratory  Data Analysis
+
+- The most frecuently used genres
+
+This visualization shows this problem is characterized by a high presence of imbalanced classes (genrs) in which drama is most frecuently used genre and news is the least used![image info](https://eduardotoledozero.github.io/assets/img/competitions/mostusedgenres.jpg)
+
 
 
