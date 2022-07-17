@@ -36,4 +36,6 @@ In this project, the full Machine Learning pipeline can be seen in each part of 
 This visualization shows this problem is characterized by a high presence of imbalanced classes (genrs) in which drama is most frecuently used genre and news is the least used![image info](https://eduardotoledozero.github.io/assets/img/competitions/mostusedgenres.jpg)
 
 
+This notebook can be checked in  <https://github.com/eduardotoledoZero/Competitions/blob/main/Movies_Genres_Classification_EDA.ipynb>
+
 
