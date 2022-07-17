@@ -36,13 +36,13 @@ In this project, the full Machine Learning pipeline can be seen in each part of 
 This visualization shows this problem is characterized by a high presence of imbalanced classes (genrs) in which drama is most frecuently used genre and news is the least used![The most frequently used genres](https://eduardotoledozero.github.io/assets/img/competitions/mostusedgenres.jpg)
 
 Also, there are 2405 movies classified with two genres, 2419 classified with 3 genres, 1172 classified with one genre and 2 movies with 9 genres such as the the below visualiztion shows:
-[Movies Quantity by number of genres](https://eduardotoledozero.github.io/assets/img/competitions/frequencyofgenres.jpg)
+![Movies Quantity by number of genres](https://eduardotoledozero.github.io/assets/img/competitions/frequencyofgenres.jpg)
 
 2; Frequency of use of words
 
 The below visualization shows the 100 words most used without any type of preprocessing.
 
-[Frequency of use of words](https://eduardotoledozero.github.io/assets/img/competitions/fequencyofuseofwords.jpg)
+![Frequency of use of words](https://eduardotoledozero.github.io/assets/img/competitions/fequencyofuseofwords.jpg)
 
 
 This notebook can be checked in  <https://github.com/eduardotoledoZero/Competitions/blob/main/Movies_Genres_Classification_EDA.ipynb>
