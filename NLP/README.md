@@ -45,7 +45,7 @@ This notebook can be checked in  <https://github.com/eduardotoledoZero/Competiti
 
 ## 2. Text Preprocessing
 
-It is the first step in the pipeline  of **Natural Language Processing**  in order to clean the text, reduce the vocabulary to get the words with greater predictive value and extract meaninful information and hence, prepare it for the phase of model building.
+It is the first step in the pipeline  of **Natural Language Processing**  in order to clean the text, reduce the vocabulary to get the words with greater predictive value and extract meaningful information and hence, prepare it for the phase of model building.
 The preprocessing steps are:
 
 - Lower Casing
@@ -62,7 +62,7 @@ In any sentence, you can find words in lower case and upper case at same time. I
 
 ### 2.2. Removal of Punctuation Mark 
 
-Here, the punctuations marks  and html tags  are removed due to the business case which is to predict the genre. However, if the business case was related to emotions classification/ sentimental analysis then the text preprocessing should keep/retain some puntuation mark.
+Here, the punctuations marks  and html tags  are removed due to the business case which is to predict the genre. However, if the business case was related to emotions classification/ sentimental analysis then the text preprocessing should keep/retain some punctuation marks.
 
 In this competition, the steps mentioned above were applied in a row and the below visualization shows the reduction of vocabulary and the change in the composition of the corpus.
 
