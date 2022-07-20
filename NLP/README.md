@@ -27,7 +27,8 @@ In this project, the full Machine Learning pipeline can be seen in each part of 
 
 ### 1.1. The most frecuently used genres
 
-This visualization shows this problem is characterized by a high presence of imbalanced classes (genrs) in which drama is most frecuently used genre and news is the least used![The most frequently used genres](https://eduardotoledozero.github.io/assets/img/competitions/nlp/movies_genres_classification/mostusedgenres.jpg)
+This visualization shows this problem is characterized by a high presence of imbalanced classes (genrs) in which drama is most frecuently used genre and news is the least used  </br>
+![The most frequently used genres](https://eduardotoledozero.github.io/assets/img/competitions/nlp/movies_genres_classification/mostusedgenres.jpg)
 
 Also, there are 2405 movies classified with two genres, 2419 classified with 3 genres, 1172 classified with one genre and 2 movies with 9 genres such as the the below visualiztion shows:
 ![Movies Quantity by number of genres](https://eduardotoledozero.github.io/assets/img/competitions/nlp/movies_genres_classification/frequencyofgenres.jpg)
@@ -99,4 +100,4 @@ In this competition , **TfIdVectorizer** to convert a collection of raw document
 
 Once ***TfIdVectorizer*** is applied, the length of the vocabulary is 17356. It helps a lot to reduce the dimensionality.
 
-This notebook can be checked in  <https://github.com/eduardotoledoZero/Competitions/blob/main/NLP/Movies_Genres_Classification_TextPrepprocessing.ipynb>
+This notebook can be checked in  <https://github.com/eduardotoledoZero/Competitions/blob/main/NLP/Movies_Genres_Classification_TextPreprocessing.ipynb>
