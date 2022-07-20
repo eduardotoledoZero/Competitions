@@ -19,6 +19,6 @@ Here , you can see the full Machine Learning pipeline in each part of this work:
 - Prediction
 - Model Deployment to production  
 
-See details in <https://github.com/eduardotoledoZero/Competitions/tree/main/NLP/README.MD>
+See details in <https://github.com/eduardotoledoZero/Competitions/blob/main/NLP/README.md>
 
 
