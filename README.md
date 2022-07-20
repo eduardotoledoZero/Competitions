@@ -4,7 +4,7 @@
 
 This repository containls all muy work for all competitions in which I have participartedin Kaggle and Zindi.Africa.
 
-## Competition 1: Natural Processing Language
+## Competition 1: Natural Processing Language/ Movies Genres Classification
 
 This project will use a set of movies genres data . Each observation has the titile of the movie, year of the movie, title plot and the different genres of the movie (a movie might be classified to multiples genres).
 
