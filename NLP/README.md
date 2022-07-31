@@ -72,8 +72,8 @@ After these transformations , the length of the vocabulary of full corpus is  39
 
 ### 2.3. Removal of Stop words
 
-A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that a search engine has been programmed to ignore.</br> 
-Given that Stop words  do not add much value to global meaning  of the sentence, then they can be removed and it wold help a lot to reduce the vocabulary and thus, it helps to the reduction of dimensionality.
+A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that a search engine has been programmed to ignore.</br>
+Given that Stop words  do not add much value to global meaning  of the sentence, then they can be removed and it would help a lot to reduce the vocabulary and thus, it helps to the reduction of dimensionality.
 NLTK(Natural Language Toolkit) in python has a list of stopwords stored in 16 different languages.
 
 ![Frequency of use of words](https://eduardotoledozero.github.io/assets/img/competitions/nlp/movies_genres_classification/stopword_removal.jpg)
@@ -82,7 +82,7 @@ After this transformation , the length of the vocabulary of full corpus is  3937
 
 ### 2.4. Stemming/Lemmatization
 
-Stemming is the process of reduction of a word into its root word by removing derivational suffixes. For example, the words “likes”, “likely” and “liked” all result in the common root “like”. Sometimes, the result of stemming has no a meaning. For example, for universe, universal, univeristy; their root is univers.
+Stemming is the process of reduction of a word into its root word by removing derivational suffixes. For example, the words “likes”, “likely” and “liked” all result in the common root “like”. Sometimes, the result of stemming has no a meaning. For example, for universe, universal, university; their root is univers.
 
 Lemmatization: uses context  to transform words to their dictionary(base) form. In general term, lemmatization is preferred to stemming because it adds context and the context is important in NLP applications.
 
@@ -101,3 +101,27 @@ In this competition , **TfIdVectorizer** to convert a collection of raw document
 Once ***TfIdVectorizer*** is applied, the length of the vocabulary is 17356. It helps a lot to reduce the dimensionality.
 
 This notebook can be checked in  <https://github.com/eduardotoledoZero/Competitions/blob/main/NLP/Movies_Genres_Classification_TextPreprocessing.ipynb>
+
+## 3. Model Building
+
+Here will be presented three approaches to build the model through a classical machine learning model as RandomForest , a machine learning with deep neural network and Long short term-memory networks respectively.
+
+### 3.1. Classic Machine Learning Model: RandomForest
+
+Given the nature  of this bussines problem in where a movie can belong to  multiple genres ,  it is categorized as a multi-label classification in which each label is  not mutuallly exclusive and they are somehow related.</br>
+
+First of all, the genres -target variable- has to be encoded appropiately. In order to do it, sklearn offers **MultiLabelBinarizer**. Then, split  data into training set and test set. 
+
+Consecutively, Hyperparameter tuning is carried out and essentially , this process gets the best set of parameters selected for the model. There are many hypeparameters optimization frameworks as Optuna, HyperOpt among others but also, the existing two generic approaches such as GridSearchCV and RandomizedSearchCV which come into sklearn. However,  I recently found a new one with dask called Dask-SearchCV which is ***distribuited hyperparameter optimization with Scikit-Learn*** being this version with Dask faster that  the sckit-learn version and gave one try to it to see its behavior.
+
+GridSearchCV is basically considering all the combinations of the candidates in finding the best parameters. This would in turn take a very long time when there are a greater number of parameter and their values to tune. Instead, RandomizedSearchCV solves the drawbacks of GridSearchCV, as it goes through only a fixed number of hyperparameter settings. It moves within the grid in random fashion to find the best set hyperparameters. This approach reduces unnecessary computation.
+
+Here, RandomizedSearchCV is used to get a baselines of parameter and reduce the scope of the grid in order to be used in Dask-SearchCV.
+The best score as result of the hyperparameters tuning is a AUC=0.85 and its best parameters are 
+
+{'estimator__n_estimators': 1000, 'estimator__min_samples_split': 20, 'estimator__max_leaf_nodes': 30, 'estimator__max_features': 'sqrt'}
+
+Finally, given these parameters, the model  with the dataset testing is ran and its AUC is 0.8585677305266167. It means that the model generalizes well in both datasets.
+
+
+This notebook can be checked in  <https://github.com/eduardotoledoZero/Competitions/blob/main/NLP/Movies Genres Classification_Modelling_RandomForest.ipynb>

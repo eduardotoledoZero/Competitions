@@ -14,8 +14,7 @@ Here , you can see the full Machine Learning pipeline in each part of this work:
 - Data Cleansing in order to remove noisy
 - Text Preprocessing in order to reduce the corpus of the vocabulary.
 - Text tokenization/vectorization
-- Modeling  
-- Model Hyperparameter tuning
+- Modeling  and  Hyperparameter tuning with classic Machine Learning
 - Prediction
 - Model Deployment to production  
 
