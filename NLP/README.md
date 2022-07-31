@@ -124,4 +124,4 @@ The best score as result of the hyperparameters tuning is a AUC=0.85 and its bes
 Finally, given these parameters, the model  with the dataset testing is ran and its AUC is 0.8585677305266167. It means that the model generalizes well in both datasets.
 
 
-This notebook can be checked in  <https://github.com/eduardotoledoZero/Competitions/blob/main/NLP/Movies_Genres Classification_Modelling_RandomForest.ipynb>
+This notebook can be checked in  <https://github.com/eduardotoledoZero/Competitions/blob/main/NLP/Movies_Genres_Classification_Modelling_RandomForest.ipynb>
