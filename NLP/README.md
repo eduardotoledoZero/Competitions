@@ -108,7 +108,7 @@ Here will be presented three approaches to build the model through a classical m
 
 ### 3.1. Classic Machine Learning Model: RandomForest
 
-Given the nature  of this bussines problem in where a movie can belong to  multiple genres ,  it is categorized as a multi-label classification in which each label is  not mutuallly exclusive and they are somehow related.</br>
+Given the nature  of this business problem in where a movie can belong to  multiple genres ,  it is categorized as a multi-label classification in which each label is  not mutuallly exclusive and they are somehow related.</br>
 
 First of all, the genres -target variable- has to be encoded appropiately. In order to do it, sklearn offers **MultiLabelBinarizer**. Then, split  data into training set and test set. 
 
